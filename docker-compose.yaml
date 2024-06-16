@@ -16,6 +16,8 @@ services:
       - --providers.docker.network=traefik_public
       # Logging levels are DEBUG, PANIC, FATAL, ERROR, WARN, and INFO.
       - --log.level=info
+      # insecure configuration
+      - --api.insecure=true
     ports:
       - 80:80
       - 8080:8080
