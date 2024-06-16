@@ -1,6 +1,15 @@
 version: "3.7"
 
 services:
+  dotnet:
+    image: harbor.staging.ignite.dev/docker-images/ignitedotdev-templates/dotnet-docker:9494254926-5
+    ports:
+      - 6177:80
+    depends_on:
+      - traefik
+    labels:
+      - "traefik.http.routers.dotnet.rule=Host(`donet.local`)"
+
   traefik:
     image: traefik:v2.6
     command:
