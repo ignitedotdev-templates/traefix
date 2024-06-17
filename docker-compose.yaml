@@ -36,6 +36,8 @@ services:
     restart: unless-stopped
     depends_on:
       - socket_proxy
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
 
   # https://github.com/traefik/whoami
   whoami:
@@ -66,7 +68,7 @@ services:
       CONTAINERS: 1
       TASKS: 1
     volumes:
-      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /var/run/docker.sock:/var/run/docker.sock
     networks:
       - socket_proxy
 
