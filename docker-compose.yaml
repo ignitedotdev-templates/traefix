@@ -49,18 +49,18 @@ services:
       - 8085:8080
     depends_on:
       - traefik
-  # nodejs:
-  #   image: harbor.staging.ignite.dev/docker-images/ignitedotdev-templates/node-docker:9441426644-16
-  #   ports:
-  #     - 3002:3000
-  #   depends_on:
-  #     - traefik
-  # playframework:
-  #   image: harbor.staging.ignite.dev/docker-images/ignitedotdev-templates/playframework-docker:9543820634-2
-  #   ports:
-  #     - 9000:9000
-  #   depends_on:
-  #     - traefik
+  nodejs:
+    image: harbor.staging.ignite.dev/docker-images/ignitedotdev-templates/node-docker:9441426644-16
+    ports:
+      - 3002:3000
+    depends_on:
+      - traefik
+  playframework:
+    image: harbor.staging.ignite.dev/docker-images/ignitedotdev-templates/playframework-docker:9543820634-2
+    ports:
+      - 9000:9000
+    depends_on:
+      - traefik
 
   traefik:
     image: traefik:v2.6
