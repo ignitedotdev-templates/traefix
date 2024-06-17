@@ -38,7 +38,7 @@ services:
     depends_on:
       - traefik
   nextjs:
-    image: harbor.staging.ignite.dev/docker-images/ignitedotdev-templates/nextjs-docker:9491066171-4
+    image: harbor.staging.ignite.dev/docker-images/ignitedotdev-templates/nextjs-docker:9551525912-6
     ports:
       - 3001:3000
     depends_on:
