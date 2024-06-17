@@ -25,12 +25,12 @@ services:
       - 8002:8000
     depends_on:
       - traefik
-  # django:
-  #   image: harbor.staging.ignite.dev/docker-images/ignitedotdev-templates/django-docker:9497186675-4
-  #   ports:
-  #     - 8000:8000
-  #   depends_on:
-  #     - traefik
+  django:
+    image: harbor.staging.ignite.dev/docker-images/ignitedotdev-templates/django-docker:9497186675-4
+    ports:
+      - 8000:8000
+    depends_on:
+      - traefik
   # flask:
   #   image: harbor.staging.ignite.dev/docker-images/ignitedotdev-templates/flask-docker:9497540256-4
   #   ports:
