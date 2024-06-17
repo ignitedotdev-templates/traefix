@@ -13,12 +13,12 @@ services:
       - 8081:8080
     depends_on:
       - traefik
-  # ruby:
-  #   image: harbor.staging.ignite.dev/docker-images/ignitedotdev-templates/ruby-on-rails-docker:9491745603-5
-  #   ports:
-  #     - 3000:3000
-  #   depends_on:
-  #     - traefik
+  ruby:
+    image: harbor.staging.ignite.dev/docker-images/ignitedotdev-templates/ruby-on-rails-docker:9491745603-5
+    ports:
+      - 3000:3000
+    depends_on:
+      - traefik
   # laravel:
   #   image: harbor.staging.ignite.dev/docker-images/ignitedotdev-templates/docker-laravel:9495720880-4
   #   ports:
