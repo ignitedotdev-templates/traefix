@@ -31,12 +31,12 @@ services:
       - 8000:8000
     depends_on:
       - traefik
-  # flask:
-  #   image: harbor.staging.ignite.dev/docker-images/ignitedotdev-templates/flask-docker:9497540256-4
-  #   ports:
-  #     - 8000:8000
-  #   depends_on:
-  #     - traefik
+  flask:
+    image: harbor.staging.ignite.dev/docker-images/ignitedotdev-templates/flask-docker:9497540256-4
+    ports:
+      - 5000:5000
+    depends_on:
+      - traefik
   # nextjs:
   #   image: harbor.staging.ignite.dev/docker-images/ignitedotdev-templates/nextjs-docker:9491066171-4
   #   ports:
