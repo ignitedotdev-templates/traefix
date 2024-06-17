@@ -8,7 +8,7 @@ services:
     depends_on:
       - traefik
   rust:
-    image: harbor.staging.ignite.dev/docker-images/ignitedotdev-templates/rust-docker:9497244835-8
+    image: harbor.staging.ignite.dev/docker-images/ignitedotdev-templates/rust-docker:9550703302-9
     ports:
       - 8081:8080
     depends_on:
@@ -26,7 +26,7 @@ services:
     depends_on:
       - traefik
   django:
-    image: harbor.staging.ignite.dev/docker-images/ignitedotdev-templates/django-docker:9497186675-4
+    image: harbor.staging.ignite.dev/docker-images/ignitedotdev-templates/django-docker:9551476727-5
     ports:
       - 8000:8000
     depends_on:
