@@ -56,7 +56,7 @@ services:
     depends_on:
       - traefik
   playframework:
-    image: harbor.staging.ignite.dev/docker-images/ignitedotdev-templates/playframework-docker:9543820634-2
+    image: harbor.staging.ignite.dev/docker-images/ignitedotdev-templates/playframework-docker:9544646553-3
     ports:
       - 9000:9000
     depends_on:
