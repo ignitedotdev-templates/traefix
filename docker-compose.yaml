@@ -13,54 +13,54 @@ services:
       - 8081:8080
     depends_on:
       - traefik
-  ruby:
-    image: harbor.staging.ignite.dev/docker-images/ignitedotdev-templates/ruby-on-rails-docker:9491745603-5
-    ports:
-      - 3000:3000
-    depends_on:
-      - traefik
-  laravel:
-    image: harbor.staging.ignite.dev/docker-images/ignitedotdev-templates/docker-laravel:9495720880-4
-    ports:
-      - 3000:3000
-    depends_on:
-      - traefik
-  django:
-    image: harbor.staging.ignite.dev/docker-images/ignitedotdev-templates/django-docker:9497186675-4
-    ports:
-      - 8000:8000
-    depends_on:
-      - traefik
-  flask:
-    image: harbor.staging.ignite.dev/docker-images/ignitedotdev-templates/flask-docker:9497540256-4
-    ports:
-      - 8000:8000
-    depends_on:
-      - traefik
-  nextjs:
-    image: harbor.staging.ignite.dev/docker-images/ignitedotdev-templates/nextjs-docker:9491066171-4
-    ports:
-      - 3001:3000
-    depends_on:
-      - traefik
-  springboot:
-    image: harbor.staging.ignite.dev/docker-images/ignitedotdev-templates/springboot-docker:9490811268-3
-    ports:
-      - 8081:8080
-    depends_on:
-      - traefik
-  nodejs:
-    image: harbor.staging.ignite.dev/docker-images/ignitedotdev-templates/node-docker:9441426644-16
-    ports:
-      - 3002:3000
-    depends_on:
-      - traefik
-  playframework:
-    image: harbor.staging.ignite.dev/docker-images/ignitedotdev-templates/playframework-docker:9543820634-2
-    ports:
-      - 9000:9000
-    depends_on:
-      - traefik
+  # ruby:
+  #   image: harbor.staging.ignite.dev/docker-images/ignitedotdev-templates/ruby-on-rails-docker:9491745603-5
+  #   ports:
+  #     - 3000:3000
+  #   depends_on:
+  #     - traefik
+  # laravel:
+  #   image: harbor.staging.ignite.dev/docker-images/ignitedotdev-templates/docker-laravel:9495720880-4
+  #   ports:
+  #     - 3000:3000
+  #   depends_on:
+  #     - traefik
+  # django:
+  #   image: harbor.staging.ignite.dev/docker-images/ignitedotdev-templates/django-docker:9497186675-4
+  #   ports:
+  #     - 8000:8000
+  #   depends_on:
+  #     - traefik
+  # flask:
+  #   image: harbor.staging.ignite.dev/docker-images/ignitedotdev-templates/flask-docker:9497540256-4
+  #   ports:
+  #     - 8000:8000
+  #   depends_on:
+  #     - traefik
+  # nextjs:
+  #   image: harbor.staging.ignite.dev/docker-images/ignitedotdev-templates/nextjs-docker:9491066171-4
+  #   ports:
+  #     - 3001:3000
+  #   depends_on:
+  #     - traefik
+  # springboot:
+  #   image: harbor.staging.ignite.dev/docker-images/ignitedotdev-templates/springboot-docker:9543865002-1
+  #   ports:
+  #     - 8081:8080
+  #   depends_on:
+  #     - traefik
+  # nodejs:
+  #   image: harbor.staging.ignite.dev/docker-images/ignitedotdev-templates/node-docker:9441426644-16
+  #   ports:
+  #     - 3002:3000
+  #   depends_on:
+  #     - traefik
+  # playframework:
+  #   image: harbor.staging.ignite.dev/docker-images/ignitedotdev-templates/playframework-docker:9543820634-2
+  #   ports:
+  #     - 9000:9000
+  #   depends_on:
+  #     - traefik
 
   traefik:
     image: traefik:v2.6
